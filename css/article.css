@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* line 8, ../../../Экзамен/sass/article.sass */
+.article__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, ../../../Экзамен/sass/article.sass */
+.article__img img {
+  display: block;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=article.css.map */

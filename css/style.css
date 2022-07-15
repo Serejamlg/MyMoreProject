@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* line 14, ../../../Экзамен/sass/header.sass */
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+/* line 17, ../../../Экзамен/sass/header.sass */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+/* line 21, ../../../Экзамен/sass/header.sass */
+.header__logo {
+  z-index: 3;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 26, ../../../Экзамен/sass/header.sass */
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 28, ../../../Экзамен/sass/header.sass */
+.header__links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: -500%;
+  width: 100vw;
+  height: 100vh;
+  padding-top: calc(45px * 2);
+  background-color: #fff;
+  z-index: 2;
+  transition: all 1s;
+}
+/* line 42, ../../../Экзамен/sass/header.sass */
+.header__links-list-display {
+  top: 0;
+}
+/* line 44, ../../../Экзамен/sass/header.sass */
+.header__burger-button {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 49, ../../../Экзамен/sass/header.sass */
+.header__link a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+/* line 53, ../../../Экзамен/sass/header.sass */
+.header__burger {
+  z-index: 3;
+  position: relative;
+  width: 24px;
+  height: 4px;
+  background: black;
+}
+/* line 57, ../../../Экзамен/sass/header.sass */
+.header__burger::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 24px;
+  height: 4px;
+  background: black;
+}
+/* line 63, ../../../Экзамен/sass/header.sass */
+.header__burger::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 24px;
+  height: 4px;
+  background: black;
+}
+/* line 8, ../../../Экзамен/sass/article.sass */
+.article__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 10, ../../../Экзамен/sass/article.sass */
+.article__img img {
+  display: block;
+  width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */
+.article__more-button {
+  margin-bottom: 20px;
+}
+.article__more-button {
+  height:50px;
+  width: 100px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: rgba(110, 110, 110, 0.7);
+  cursor: pointer;
+  background-color: #fff;
+  font-weight: 100;
+}
+.title-gallery {
+  padding: 20px;
+  border-top:1px solid silver ;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+} 
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom:1px solid silver;
+}
+.box__icon img {
+  height: 50px ;
+  margin-top: 40px;
+}
+.box__number {
+margin: 25px;
+font-weight: bold;
+}
+.box__content {
+  margin-bottom: 20px;
+}
+.form-control {
+  min-width:500px;
+}
+h3 {
+  margin-top: 35px;
+  margin-bottom: -10px;
+}
+.input__check {
+  display: flex;
+}
+.form-floating {
+  min-width: 500px;
+}
+.check__button {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid silver;
+  align-items: center;
+} 
+.social__network {
+  padding: 15px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social img {
+  height: 40px;
+}
+.header__social__network {
+  display: none;
+}
+
+
+@media (min-width: 600px) and (max-width: 850px) {
+ .header__links-list { 
+ } 
+ .article__img img {
+   width: 45vw;
+ }
+.container__content {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  gap: 10px;
+  grid-template-areas: 
+}
+.container__boxs {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr) ;
+  grid-template-rows:repeat(2, 1fr) ;
+}
+.article {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.article__squad {
+  padding: 20px;
+}
+.article__revers {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-between;
+} 
+.input__name {
+  display: flex;
+  max-width: 150px;
+}
+.form-control {
+  display: block;
+  min-width:100% ;
+  margin: 5px;
+}
+.container {
+  max-width: 850px;
+}
+html  {
+  max-width: 850px;
+  justify-content: center;
+}
+body {
+  max-width: 850px;
+}
+.check__button {
+  width: initial;
+}
+.header__social__network {
+  display: none;
+}
+
+
+@media (min-width: 850px) and (max-width: 1980px) {
+  body {
+    background-color: red;
+  }
+  
+}
